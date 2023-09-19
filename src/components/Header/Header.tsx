@@ -1,0 +1,12 @@
+import { formatDate } from "../../helpers/formatDate";
+import styles from "./styles.module.css";
+
+const Header: React.FC = () => {
+  return (
+    <header className={styles.header}>
+      <h1 className={styles.title}>News Pet Project</h1>
+      <p className={styles.date}>{formatDate(new Date())}</p>
+    </header>
+  );
+};
+export default Header;
